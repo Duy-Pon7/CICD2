@@ -2,7 +2,7 @@ name: CI Pull Request
 
 on:
   pull_request:
-    types: [closed]   # khi PR được merge hoặc closed
+    types: [closed]   # Khi PR được merge hoặc closed
 
 jobs:
   build-and-test:
@@ -48,4 +48,4 @@ jobs:
 
     - name: Notify Slack
       run: |
-          curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Hello, World!\"}" https://hooks.slack.com/services/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
+          curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Hello, World! PR Closed Successfully!\"}" https://hooks.slack.com/services/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
