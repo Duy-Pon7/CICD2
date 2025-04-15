@@ -46,3 +46,9 @@ jobs:
           }' \
           https://nhom0001.atlassian.net/rest/api/3/issue/$ISSUE_KEY/transitions
 
+    - name: Notify Slack
+      run: |
+        curl -X POST -H 'Content-type: application/json' \
+        --data '{"text":"🎉 Issue $ISSUE_KEY đã được chuyển sang trạng thái *Done*! 🎉"}' \
+        https://hooks.slack.com/services/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
+
