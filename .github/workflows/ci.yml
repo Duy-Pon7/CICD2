@@ -48,4 +48,4 @@ jobs:
 
     - name: Notify Slack
       run: |
-          curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Hello, World! PR Closed Successfully!\"}" https://hooks.slack.com/services/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
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
